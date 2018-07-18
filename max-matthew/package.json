@@ -1,0 +1,15 @@
+{
+  "name": "max-matthew",
+  "version": "1.0.0",
+  "description": "This is a codefellows project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Max and Matthew",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
