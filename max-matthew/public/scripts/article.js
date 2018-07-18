@@ -48,10 +48,10 @@ Article.prototype.insertRecord = function(callback) {
   $.post('/articles', {author: this.author, authorUrl: this.authorUrl, body: this.body, category: this.category, publishedOn: this.publishedOn, title: this.title})
     .then(data => {
       console.log(data);
-      console.log(callback);
+      
 
       // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-      // PUT YOUR RESPONSE HERE
+      // This line is checking to see if a response if made from the server after the info from new.html is sent in request and if data is received, the function runs ( create the object ) 
       if (callback) callback();
     })
 };
