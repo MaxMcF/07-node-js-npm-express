@@ -16,8 +16,12 @@ app.post('/articles', (request, response) => {
 })
 
 app.get('/new', (request, response) =>{
-response.status(200).sendFile('./public/new.html');
+response.status(200).sendFile('/new.html', {root: './public'});
 })
 
+app.use( (request, response) => {
+response.status(404);
+response.send('404 error');
+})
 app.listen(PORT, () => {
 console.log(`the Server us up on port ${PORT}`)})
