@@ -126,15 +126,12 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-<<<<<<< HEAD
-  // PUT YOUR RESPONSE HERE
-  article.insertRecord(article);
-=======
+
   article.insertRecord();
   // this is found in article.js - This sends a request to the server after the article.submit is run - 
   // Once the info is received by the server and the response is made .insertRecord is run using the data to create an object
  
->>>>>>> 83a005928ac3c91f9cb6dcd678009121d0feec62
+
 }
 
 articleView.initIndexPage = () => {

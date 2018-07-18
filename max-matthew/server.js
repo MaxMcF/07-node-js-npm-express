@@ -14,6 +14,8 @@ app.post('/articles', (request, response) => {
   // console.log(request.body);
   response.status(201).json(request.body);
 })
-
+app.get('/new', (request, response) =>{
+response.json('<p>This is the response</p>');
+})
 app.listen(PORT, () => {
 console.log(`the Server us up on port ${PORT}`)})
