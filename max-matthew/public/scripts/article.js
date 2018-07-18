@@ -53,7 +53,9 @@ Article.prototype.insertRecord = function(callback) {
 
       // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
       // This line is checking to see if a response if made from the server after the info from new.html is sent in request and if data is received, the function runs ( create the object ) 
-      if (callback) callback();
-
+      if (callback){ 
+        callback(data); 
+        articleView.initIndexPage();
+      }
     })
 };
